@@ -10,8 +10,7 @@ public class SawBody : MonoBehaviour
     public float TimeOffset = 1;
     public Vector2 Direction;
 
-    [NonSerialized]
-    public float RotationSpeed;
+    public float RotationSpeed = 2f;
 
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
@@ -19,7 +18,6 @@ public class SawBody : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RotationSpeed = Speed / 10;
         _rb = GetComponent<Rigidbody2D>();
         _sr = GetComponent<SpriteRenderer>();
     }

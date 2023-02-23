@@ -6,7 +6,7 @@ using UnityEngine;
 public class StaticSaw : MonoBehaviour
 {
     [SerializeField]
-    private float RotationSpeed = 5;
+    private float RotationSpeed = 2f;
 
     private SpriteRenderer _sr;
 
